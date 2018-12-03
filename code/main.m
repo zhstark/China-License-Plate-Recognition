@@ -184,8 +184,6 @@ end
 end
 
 Plate = final_plant;
-
-figure, imshow(I); title('original');
 bw=Plate;
 figure,imshow(bw);title('License Plate');
 
@@ -199,7 +197,7 @@ bw = I_stretch;
 
 %================Angle correction======================
 
-angle=radonTransfer(bw) % Get the slant angle
+angle=radonTransfer(bw); % Get the slant angle
 if(abs(angle)<6)    % Correct the smale slant angle
     bw=imrotate(bw,angle,'bilinear');
 end
@@ -251,7 +249,7 @@ for i=1:length(index)/2-1
     interval_array(i) = pos2-pos1-1;
 end
 
-[~, second_third_span_index] = max(interval_array)
+[~, second_third_span_index] = max(interval_array);
 
 segment_index = zeros(14, 1);
 segment_index(3) = index(2*second_third_span_index-1);
