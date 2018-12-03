@@ -4,7 +4,7 @@ In this project, we use a third-part library [vlfeat](http://www.vlfeat.org/inde
 
 In order to show the Chinese character correctly, it is needed to change the MATLAB coding method to 'UTF-8'. Otherwise it might be show as messy code.
 
-The directory format is suitable to MacOS system. It is needed to change '/' into '\' if you use MATLAB on Windows.
+The directory format is suitable to MacOS system. It is needed to change '/' into '\\' if you use MATLAB on Windows.
 
 ## step1
 
